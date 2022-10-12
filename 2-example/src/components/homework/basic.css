@@ -1,0 +1,89 @@
+.b-s {
+    border: 1px solid #ccc;
+  }
+  
+  .fs-18 {
+    font-size: 18px;
+  }
+  
+  .fs-15 {
+    font-size: 15px;
+  }
+  
+  .fs-20 {
+    font-size: 20px;
+  }
+  
+  .p-20 {
+    padding: 20px !important;
+  }
+  
+  .b-b {
+    border-bottom: 1px solid rgb(218, 216, 216);
+  }
+  
+  .fw-300 {
+    font-weight: 300;
+  }
+  
+  .pl-8 {
+    padding-left: 8px;
+  }
+  
+  .pl-30 {
+    padding-left: 30px !important;
+  
+  }
+  
+  .mg-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .mg-t {
+    margin-top: -30px !important;
+  }
+  
+  #app {
+    background-color: #000;
+    min-height: 800px;
+  }
+  
+  .app1 {
+    padding: 50px;
+  }
+  
+  .content {
+    width: 400px;
+    height: 200px;
+  }
+  
+  .img {
+    max-width: 160px;
+  }
+  
+  .content1 {
+    width: 300px;
+    height: 400px;
+    margin-top: -300px !important;
+  }
+  
+  .img1 {
+    max-width: 250px;
+  }
+  
+  .content2 {
+    width: 400px;
+    height: 450px;
+  }
+  
+  .img2 {
+    max-width: 365px;
+  }
+  
+  .link:focus .icon{
+    color: yellow;
+    cursor: pointer;
+  }
+  
+  
