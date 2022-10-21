@@ -1,6 +1,6 @@
 import React from "react";
 import img2 from "./basic-images/img2.jpg";
-
+import "./basic.css";
 type Props = {};
 
 const Basic2 = ({}: Props) => {
