@@ -17,23 +17,23 @@ function Login() {
     },
     validationSchema: SignupSchema,
     onSubmit: (values) => {
-      // const data = values;
-      // const url = "https://63528b1846c9ee586d84e9db.mockapi.io/users";
-      // fetch(url, {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify(data),
-      // })
-      //   .then((response) => response.json())
-      //   .then((json) => {
-      //     console.log(json);
-      //   })
-      //   .catch((error) => {
-      //     console.error(error);
-      //   });
-      console.log(values);
+      const data = values;
+      const url = "https://63528b1846c9ee586d84e9db.mockapi.io/Users";
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => response.json())
+        .then((json) => {
+          console.log(json);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+      // console.log(values);
       
     },
   });
@@ -44,19 +44,19 @@ function Login() {
   };
 
   return (
-    // <form onSubmit={formik.handleSubmit}>
-    //   <div>
-    //     <input
-    //       name="name"
-    //       value={formik.values.name}
-    //       onChange={formik.handleChange}
-    //       onBlur={formik.handleBlur}
-    //     />
-    //     <p>{formik.errors.name ?? null}</p>
-    //   </div>
-    //   <input type="submit" />
-    // </form>
-    <div>HELLO</div>
+    <form onSubmit={formik.handleSubmit}>
+      <div>
+        <input
+          name="name"
+          value={formik.values.name}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+        />
+        <p>{formik.errors.name ?? null}</p>
+      </div>
+      <input type="submit" />
+    </form>
+    // <div>HELLO</div>
   );
 }
 
