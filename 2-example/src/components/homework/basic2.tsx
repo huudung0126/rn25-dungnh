@@ -1,34 +1,34 @@
 import React from "react";
-import img2 from "./basic-images/img2.jpg";
-import "./basic.css";
+import Tivi from "./basic-images/img2.jpg";
+import { AiFillStar } from "react-icons/ai";
+import { AiOutlineStar } from "react-icons/ai";
+
+// import
 type Props = {};
 
-const Basic2 = ({}: Props) => {
+function Basic2({}: Props) {
   return (
-    <>
-      <div id="app">
-        <div className="content1 row row-cols-1 bg-light mg-auto">
-          <div className="col-12 text-center">
-            <img className="img1" src={img2} alt="" />
+    <div className="main__2">
+      <div className="row p-4">
+        <div className="col-12">
+          <img src={Tivi} alt="Television" className="img2" />
+        </div>
+        <div className="col-12">
+          <h2 className="main__2-name">YOUNG SHOP</h2>
+          <h3 className="main__2-size">SAMSUNG IHBCD 50 INCH</h3>
+          <div className="main__2-star">
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            {/* <AiOutlineStar /> */}
           </div>
-          <div className="col-12 mg-t pl-30">
-            <h1 className="fs-15 fw-300 b-b pb-2">DARK SHOP</h1>
-            <p className="text-primary fw-300 fs-15">Samsung UHD TV 24inch</p>
-            <i className="fa-solid fa-star text-warning p-1"></i>
-            <i className="fa-solid fa-star text-warning p-1"></i>
-            <i className="fa-solid fa-star text-warning p-1"></i>
-            <i className="fa-solid fa-star text-warning p-1"></i>
-            <a href="#" className="link text-dark">
-              <i className="icon fa-regular fa-star"></i>
-            </a>
-            <span className="text-black-50 p-3">02</span>
-            <br />
-            <span>$599</span>
-          </div>
+          <span className="main__2-buy">30 trieu</span>
         </div>
       </div>
-    </>
+    </div>
   );
-};
+}
 
 export default Basic2;
